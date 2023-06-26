@@ -24,7 +24,7 @@ const Dashboard = () => {
                   </p>
                   <p className="text-monthly-income">
                     <i
-                      class="fa-solid fa-indian-rupee-sign "
+                      className="fa-solid fa-indian-rupee-sign "
                       style={{ color: "#230750" }}
                     ></i>{" "}
                     50,000
@@ -40,7 +40,7 @@ const Dashboard = () => {
               <div className="accounting-bottom-left">
                 <p className="accounting-bottom-left-total">
                   <i
-                    class="fa-solid fa-indian-rupee-sign"
+                    className="fa-solid fa-indian-rupee-sign"
                     style={{ color: "#230750" }}
                   ></i>{" "}
                   2,80,0000
@@ -53,7 +53,7 @@ const Dashboard = () => {
               <div className="accounting-bottom-right">
                 <p className="accounting-bottom-left-total">
                   <i
-                    class="fa-solid fa-indian-rupee-sign"
+                    className="fa-solid fa-indian-rupee-sign"
                     style={{ color: "#230750" }}
                   ></i>{" "}
                   30,000

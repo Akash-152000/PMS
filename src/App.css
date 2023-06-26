@@ -426,16 +426,21 @@ option{
   height: 78vh;
 }
 
-.properties-table-title{
+.add_property_btn{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   background-color: #dadada;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  color:black;
+  height: 40px;
+  width: 100px;
+  border: 1px solid #230750;
+  border-radius: 20px;
+  cursor: pointer;
 }
-
-.column{
-  margin:0px 0px
+.add_property_btn:hover{
+  background-color: #230750;
+  color: white;
 }
 
 .property-wrapper{
@@ -474,11 +479,30 @@ option{
   padding:0 20px ;
 }
 
+.table-property-address{
+  width:200px;
+  overflow: scroll;
+}
+.table-property-address::-webkit-scrollbar{
+  display: none;
+}
+
+.property-status-table-child{
+  width:100px;
+  display: flex;
+  justify-content: center;
+}
+
 .property-tenant-name-child, .property-owner-name-child, .call-tenant-child, .call-owner-child {
+  width:150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.call-tenant-child, .call-owner-child{
+  width:100px;
+}
+
 .property-tenant-name-child p, .property-owner-name-child p, .call-tenant-child p, .call-owner-child p{
   margin: 0;
 }

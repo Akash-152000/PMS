@@ -12,7 +12,7 @@ const Sidebar = () => {
       <Link to="/" style={{ textDecoration: "none", margin:"20px 0" }}>
         <div className="sidebar-content">
           <i
-            class="fa-solid fa-table-columns fa-xl icon"
+            className="fa-solid fa-table-columns fa-xl icon"
             style={{ color: "#223750" }}
           ></i>
           <div className="sidebar-name">
@@ -24,7 +24,7 @@ const Sidebar = () => {
       <Link to="/properties" style={{ textDecoration: "none", margin:"20px 0" }}>
         <div className="sidebar-content">
           <i
-            class="fa-solid fa-house fa-xl icon"
+            className="fa-solid fa-house fa-xl icon"
             style={{ color: "#223750" }}
           ></i>
           <div className="sidebar-name">
@@ -36,7 +36,7 @@ const Sidebar = () => {
       <Link to="/leads" style={{ textDecoration: "none", margin:"20px 0"  }}>
         <div className="sidebar-content">
           <i
-            class="fa-solid fa-user-group fa-xl icon"
+            className="fa-solid fa-user-group fa-xl icon"
             style={{ color: "#223750" }}
           ></i>
           <div className="sidebar-name">
@@ -47,7 +47,7 @@ const Sidebar = () => {
       <Link to="/tenants" style={{ textDecoration: "none", margin:"20px 0"  }}>
         <div className="sidebar-content">
           <i
-            class="fa-solid fa-user-lock fa-xl icon"
+            className="fa-solid fa-user-lock fa-xl icon"
             style={{ color: "#223750" }}
           ></i>
           <div className="sidebar-name">

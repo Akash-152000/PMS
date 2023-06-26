@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import "../App.css";
+import {useParams } from "react-router-dom";
 
-const PropertyDetails = () => {
+const PropertyDetails = (props) => {
+  let params = useParams();
+  console.log(params); 
   const sliderImages = [
     {
       url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
@@ -38,17 +41,19 @@ const PropertyDetails = () => {
   if (!Array.isArray(sliderImages) || sliderImages.length <= 0) {
     return null;
   }
+  
   return (
     <div>
+      
       <section className="image-slider">
-        <div class="left">
+        <div className="left">
           <i
-            class="fa-solid fa-greater-than fa-rotate-180"
+            className="fa-solid fa-greater-than fa-rotate-180"
             onClick={prevSlide}
           ></i>
         </div>
-        <div class="right">
-          <i class="fa-solid fa-greater-than" onClick={ nextSlide }></i>
+        <div className="right">
+          <i className="fa-solid fa-greater-than" onClick={ nextSlide }></i>
         </div>
         {sliderImages.map((currentSlide, ind) => {
           return (
@@ -64,6 +69,9 @@ const PropertyDetails = () => {
             </div>
           );
         })}
+      </section>
+      <section className="property-form">
+        
       </section>
     </div>
   );
